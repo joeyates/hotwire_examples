@@ -9,6 +9,14 @@ class TodosController < ApplicationController
     @todo = Todo.new
   end
 
+  def create
+    @todo = Todo.new(todo_params)
+
+    if !@todo.save
+      render :new
+    end
+  end
+
   def edit
   end
 
