@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   root "home#show"
 
-  resources :todos
+  namespace :pure do
+    resources :todos
+  end
 end

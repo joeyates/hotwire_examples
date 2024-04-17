@@ -1,4 +1,4 @@
-class TodosController < ApplicationController
+class Pure::TodosController < ApplicationController
   before_action :set_todo, only: %i[edit update destroy]
 
   def index
