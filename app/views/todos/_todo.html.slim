@@ -1,3 +1,4 @@
 = turbo_frame_tag todo do
   div = todo.name
   = link_to "Edit", edit_todo_path(todo)
+  = button_to "Delete", todo_path(todo), method: :delete

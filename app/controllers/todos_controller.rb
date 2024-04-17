@@ -1,5 +1,5 @@
 class TodosController < ApplicationController
-  before_action :set_todo, only: %i[edit update]
+  before_action :set_todo, only: %i[edit update destroy]
 
   def index
     @todos = Todo.all
@@ -12,6 +12,10 @@ class TodosController < ApplicationController
     if !@todo.update(todo_params)
       render :edit
     end
+  end
+
+  def destroy
+    @todo.destroy
   end
 
   private
