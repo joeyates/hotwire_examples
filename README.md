@@ -1,24 +1,7 @@
-# README
+# Hotwire Examples
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application aims to present the bare minimum required
+to build a CRUD Rails application using Hotwire - the "Pure" part.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+It then builds on the Pure version by adding graceful fallback for the case
+where the browser does not support Javascript.
